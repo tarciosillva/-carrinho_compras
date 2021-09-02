@@ -7,7 +7,7 @@ interface Conditional {
 }
 
 const FreeShippingMessage: React.FC<Conditional> = (props) => {
-  if (parseFloat(props.value) >= 10) {
+  if (parseFloat(props.value) > 10) {
     return (
       <ContentMessage>Parabéns, sua compra tem frete grátis !</ContentMessage>
     );
